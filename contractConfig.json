@@ -1,0 +1,812 @@
+{
+  "address": "0xa48fDfb423ddb1714298a529a19F64ef6293f7F2",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_diaryId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_totalFunds",
+          "type": "uint256"
+        }
+      ],
+      "name": "boostingFactor",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_newFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "changeWritingFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_diaryId",
+          "type": "uint256"
+        }
+      ],
+      "name": "distributionOfFunds",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_diaryName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_pageFee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_description",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_totalNfts",
+          "type": "uint256"
+        }
+      ],
+      "name": "publishDiary",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_diaryId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_pageNum",
+          "type": "uint256"
+        }
+      ],
+      "name": "readingDiary",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "stateMutability": "payable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_diaryId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_pageText",
+          "type": "string"
+        }
+      ],
+      "name": "writingPage",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_boosterSum",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "addressToUser",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "userId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalUserDiaries",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalReadingDiaries",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isUser",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authorToDiaryId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_diaryId",
+          "type": "uint256"
+        }
+      ],
+      "name": "canWrite",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "diaryId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "diaryIdToDiary",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "diaryId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "diaryName",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "author",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pageFee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalPages",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalReaders",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalLikes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalNfts",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastEntry",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "diaryIdToPage",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "pageNum",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "diaryId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "pageText",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalReaders",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "likes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "diaryIdToTotalFunds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllDiaries",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "diaryId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "diaryName",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "author",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pageFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalPages",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalReaders",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalLikes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "listOfDiaryReaders",
+              "type": "address[]"
+            },
+            {
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalNfts",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastEntry",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ReadMyDiary.DiaryReturn[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getBalanceAddress",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_diaryId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getDiaryPages",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "pageNum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "diaryId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "pageText",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalReaders",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "likes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "listOfPageReaders",
+              "type": "address[]"
+            }
+          ],
+          "internalType": "struct ReadMyDiary.PageReturn[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "author",
+          "type": "address"
+        }
+      ],
+      "name": "getMyDiaries",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "diaryId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "diaryName",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "author",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pageFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalPages",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalReaders",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalLikes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "listOfDiaryReaders",
+              "type": "address[]"
+            },
+            {
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalNfts",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastEntry",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ReadMyDiary.DiaryReturn[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "reader",
+          "type": "address"
+        }
+      ],
+      "name": "getReadingDiaries",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "diaryId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "diaryName",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "author",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pageFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalPages",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalReaders",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalLikes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "listOfDiaryReaders",
+              "type": "address[]"
+            },
+            {
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalNfts",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastEntry",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ReadMyDiary.DiaryReturn[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "isEligibleForNft",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_diaryId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_page",
+          "type": "uint256"
+        }
+      ],
+      "name": "pageReaders",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "userId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "userReadPage",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "users",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vault",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "writingFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
